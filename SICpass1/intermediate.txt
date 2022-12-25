@@ -1,0 +1,23 @@
+0	COPY  START 0000
+
+3	      LDA   ALPHA
+
+6	BACK  ADD   BETA
+
+9	      STA   GAMMA
+
+c	      CMP   T100
+
+f	      JLT   BACK
+
+12	GO  ADD   ABC
+
+15	ABC BYTE X'F1'
+
+16	BCD BYTE C'EOF'
+
+19	ALPHA RESW  3
+
+22	BETA  WORD  5
+
+25	GAMMA RESW  1
